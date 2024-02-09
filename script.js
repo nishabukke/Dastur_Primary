@@ -2,14 +2,14 @@
 // Open the Modal
 function openModal(modalId) {
     document.getElementById(modalId).style.display = "flex";
-    // var mainContainer = document.getElementById('mainC');
+    // var mainContainer = document.getElementById('top_header');
     //   mainContainer.style.display = 'none';
   }
   
   // Close the Modal
   function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
-    // var mainContainer = document.getElementById('mainC');
+    // var mainContainer = document.getElementById('top_header');
     // mainContainer.style.display = 'block';
   }
   
@@ -36,6 +36,4 @@ function openModal(modalId) {
     }
     slides[slideIndex - 1].style.display = "block";
   }
-  
-  
-  
+ 
