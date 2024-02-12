@@ -57,22 +57,23 @@ ul{
 /* header css start */
 
 select#website-select{
-    border: none;
+  border: none;
+  border-radius: 30px;
   }
 
 .upper-header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #006fa8;
+    background-color: #0a6375;
     color: #fff;
     padding: 10px 0px;
 }
 
 .upper-header p{
     margin: 0;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .upper-right-header{
@@ -81,10 +82,10 @@ select#website-select{
 }
 
 .upper-right-header a{
-    background-color: #fff000;
+    background-color: #EB1551;
     padding: 10px 20px;
     border-radius: 30px;
-    color: #006fa8;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -149,8 +150,8 @@ select#website-select{
         transform: translateY(0);
     }
 
-    .nav-li a.active{
-      color: #006fa8;
+    .nav-li a.active, .nav-li a:hover{
+      color: #f7941e;
       font-weight: 700;
     }
 
@@ -197,15 +198,15 @@ select#website-select{
     }
   
     ul.nav li .dropdown ul li{
-      color: #006fa8;
+      color: #0A6375;
     }
   
     ul.nav li .dropdown li:hover,  ul.nav li .dropdown li.active{
-      background-color: #006fa8;
+      background-color: #0A6375;
     }
   
     ul.nav li .dropdown li:hover a,  ul.nav li .dropdown li.active a{
-      color: #fff000;
+      color: #ffffff;
     }
     
     ul.nav li .dropdown a span{
