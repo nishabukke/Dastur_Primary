@@ -1754,10 +1754,15 @@ select#website-select{
       top: 6%;
     }
   
-    .about-main-img img {
+    /* .about-main-img img {
       width: 325px;
       height: 250px;
-    }
+    } */
+
+    .about-main-img img {
+      width: 340px;
+      height: 270px;
+  }
   
     .about-bg-img-inner{
       padding: 0px 15px
@@ -1773,7 +1778,7 @@ select#website-select{
     }
   
     .about-img-icon {
-      font-size: 300px;
+      font-size: 315px;
     }
   
     .about-content-inner, .map-section{
