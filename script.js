@@ -1,3 +1,41 @@
+// mobile menu
+
+function openNav(){
+  // var element = document.getElementsByClassName("menu_mobile");
+  document.getElementById("menu_mobile").style.marginLeft = '0px';
+  document.getElementById('menu_mobile_overlay').style.display = 'block';
+  document.getElementById('icon-cancel').style.display = 'block';
+}
+
+function closeNav(){
+  // var element = document.getElementsByClassName("menu_mobile");
+  document.getElementById("menu_mobile").style.marginLeft = '-300px';
+  document.getElementById('menu_mobile_overlay').style.display = 'none';
+  document.getElementById('icon-cancel').style.display = 'none';
+}
+
+document.querySelectorAll('.accordion-title').forEach((accordionToggle) => {
+
+  accordionToggle.addEventListener('click', () => { 
+    
+    const accordionItem = accordionToggle.parentNode;
+    const accordionContent = accordionToggle.nextElementSibling;
+  
+  // If this accordion item is already open, close it.
+  
+  if (accordionContent.style.maxHeight) {
+  accordionContent.style.maxHeight = null;
+  accordionItem.classList.remove('active');
+    } else {
+    accordionContent.style.maxHeight = 'max-content';
+    // accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+    accordionItem.classList.add('active');
+    }
+    });
+    });
+
+
+
 
 // Open the Modal
 function openModal(modalId) {
