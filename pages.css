@@ -1714,6 +1714,185 @@ select#website-select{
   }
 
 
+  @media screen and (max-width:768px) {
+    .header-inner{
+      display: none;
+    }
+  
+    .mobile-header{
+      display: block;
+    }
+  
+    .carousel-item img{
+      min-height: 600px;
+    }
+  
+    .slider-content h2 {
+      font-size: 24px;
+    }
+  
+    .slider-content p {
+      font-size: 18px;
+    }
+  
+    .slider-btn{
+      font-size: 14px;
+      padding: 5px 15px;
+    }
+  
+    .about-section .row{
+      align-items: center;
+    }
+  
+    .about-main-img{
+      left: 0%;
+      top: 6%;
+    }
+    .sm-desc{
+      font-size: 14px;
+    }
+
+    .about-content-inner{
+      padding: 0;
+      padding-left: 55px;
+    }
+  
+    /* .about-main-img img {
+      width: 325px;
+      height: 250px;
+    } */
+
+    .about-main-img img {
+      width: 340px;
+      height: 270px;
+  }
+  
+    .about-bg-img-inner{
+      padding: 0px 15px
+    }
+  
+    .star-div {
+      top: 0%;
+      left: 4%;
+    }
+  
+    .star-icon{
+      font-size: 100px;
+    }
+  
+    .about-img-icon {
+      font-size: 315px;
+    }
+  
+    .map-section{
+      padding: 0px 40px;
+      text-align: center;
+    }
+  
+    .sm-title{
+      font-size: 22px;
+    }
+  
+    .common-btn{
+      margin: 0 auto;
+    }
+  
+    .harmonious-section, .school-facilities, .photo-gallery{
+      padding: 80px 20px 80px 20px;
+      text-align: center;
+    }
+
+    .contact-section{
+      padding: 80px 40px;
+    }
+  
+    .harmonious-section-inner, .harmonious-imgs{
+      flex-direction: column;
+    }
+  
+    .harmonious-img1 img, .harmonious-img2 img{
+      width: 280px;
+    }
+  
+    .school-facilities-content{
+      width: 100%;
+      padding: 0 40px;
+    }
+  
+    .school-star-div, .school-facilities .globe-div, .home, .home-star, .stars, .photo-gallery .globe-div, .cloud1, .cloud2, .sun, .pattern-img, .hands-img, .white-girl{
+      display: none;
+    }
+  
+    .facility-cards-main {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .parent-gallery-container{
+      grid-template-columns: 100%;
+    }
+    
+    .prev, .next{
+      font-size: 13px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .mySlides, .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {
+      width: 60%;
+    }
+    
+    .contact-section-wrapper{
+      grid-template-columns: repeat(1, 1fr);
+      padding: 30px;
+      border-radius: 100px 100px 0 0;
+      gap: 15px;
+    }
+
+    .contact-section-wrapper::before, .contact-section-wrapper::after{
+      height: 10%;
+    }
+
+    .contact-section-wrapper p{
+      font-size: 14px;
+    }
+
+    .contact-links{
+      gap: 5px;
+    }
+
+    .contact-links svg{
+      font-size: 25px;
+    }
+
+    .copyright-text p {
+      text-align: start !important;
+      font-size: 12px;
+    }
+
+    .footer-img{
+      padding-top: 200px;
+    }
+  
+    .middle-footer{
+      padding: 40px 0px 0px 0px;
+      margin-top: -3px;
+    }
+  
+    .lower-footer{
+      padding: 15px 0px;
+    }
+  
+    .footer2 ul, .footer3 ul {
+      margin-top: 0;
+    }
+
+    .footer2 ul li, .footer3 ul li {
+      padding: 5px 0px;
+      font-size: 14px;
+  }
+  
+  }
+
 
   @media screen and (max-width:450px) {
     .header-inner{
