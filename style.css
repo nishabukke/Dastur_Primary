@@ -155,9 +155,13 @@ select#website-select{
 .lower-header{
     position: absolute;
     left: 0;
-    top: 10%;
+    top: 9.5%;
     width: 100%;
-    padding: 10px 0px;
+    background-color: #e9f2ff;
+}
+
+.lower-header .container-fluid{
+    position: relative;
 }
 
 .lower-header .container-fluid{
@@ -178,8 +182,9 @@ select#website-select{
 }
 
 .lower-header .school-name{
-    color: #fff;
+    color: #085291;
     font-family: 'Playfair Display', sans-serif;
+    font-weight: 600;
     font-size: 20px;
     margin-bottom: 0;
 }
@@ -194,7 +199,8 @@ select#website-select{
 
     ul.nav .nav-li > a{
         padding: 0px 0px 15px 0px;
-        color: #fff;
+        color: #085291;
+        font-weight: 600;
     }
 
     ul.nav .nav-li > a{
@@ -217,7 +223,7 @@ select#website-select{
     }
 
     .nav-li a.active, .nav-li a:hover{
-      color: #fff;
+      color: #085291;
     }
 
     ul.nav li:hover .dropdown {
@@ -325,7 +331,7 @@ select#website-select{
         color: #085291 !important;
     }
 
-    .enroll-div .payment-btn svg{
+    .enroll-div .payment-btn svg, .lower-header .container-fluid svg{
         stroke: #085291 !important;
     }
 
@@ -410,7 +416,7 @@ select#website-select{
     margin-top: 0;
 }
 
-.payment-btn svg, .know-more-btn svg{
+.payment-btn svg, .know-more-btn svg, .lower-header svg{
         position: absolute;
     left: 0;
     top: 0;
@@ -433,12 +439,16 @@ select#website-select{
     stroke: #fff;
 }
 
-.payment-btn svg rect , .know-more-btn svg rect{
+.payment-btn svg rect , .know-more-btn svg rect, .lower-header .container-fluid svg rect{
     height: 40px;
     width: calc(100% - 10px);
     x: 5px;
     y: 5px;
 }
+
+ .lower-header .container-fluid svg rect{
+    height: 90px;
+ }
 
 @keyframes dashed_border_running {
     100% {
