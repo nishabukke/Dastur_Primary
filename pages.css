@@ -292,6 +292,59 @@ select#website-select{
       padding-right: 15px;
     }
 
+        /* Submenu styles */
+ul.nav li .dropdown ul li {
+  position: relative;
+}
+
+ul.nav li .dropdown ul li .submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 220px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+/* Show submenu on hover */
+ul.nav li .dropdown ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Submenu list item styles */
+ul.nav li .dropdown ul li .submenu li {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 15px;
+}
+
+ul.nav li .dropdown ul li .submenu li:last-child {
+  border-bottom: none;
+}
+
+ul.nav li .dropdown ul li .submenu li a {
+  color: #085291;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+ul.nav li .dropdown ul li .submenu li:hover {
+  background-color: #085291;
+}
+
+ul.nav li .dropdown ul li .submenu li:hover a {
+  color: #fff;
+  padding-right: 10px;
+}
+
 
 /* breadcrumb area css start */
 
@@ -388,17 +441,24 @@ select#website-select{
   grid-template-columns: repeat(1,1fr);
   gap: 30px;
 }
-.about-section.uniform-category .container #SectionTab1{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 30px;
-}
-.about-section.uniform-category .container .tab-section{
-  padding: 40px;
-}
 
 .right-about img{
   width: 100%;
+}
+
+.motto-div{
+  display: flex;
+  gap: 10px;
+}
+
+.motto-div p{
+  padding: 0px 30px;
+}
+
+.right-about #SectionTab1 p{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .left-about{
@@ -406,8 +466,9 @@ select#website-select{
 }
 
 .TabButton.disabled{
-  background-color: #085291 !important;
-  color: #fff;
+  background-color: #e9f2ff !important;
+  color: #191919;
+  border: 1px solid #085291;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -430,8 +491,8 @@ select#website-select{
   }
 
   .TabButtonSelected {
-      background-color: #ffe589;
-      color: #191919;
+      background-color: #085291;
+      color: #fff;
       font-weight: 600;
       border-left: 3px solid #f8c301;
   }
@@ -463,7 +524,7 @@ select#website-select{
   }
 
   .sh-item{
-    padding: 55px 25px;
+    padding: 45px 25px;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
     background-image: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%);
@@ -471,10 +532,7 @@ select#website-select{
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05) inset;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
-    text-align: center;
   }
 
   .team-inner{
@@ -514,6 +572,12 @@ select#website-select{
   padding: 40px;
 }
 
+.school-uniform-section .container{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .uniform-section ul{
   padding-left: 40px;
 }
@@ -536,6 +600,28 @@ select#website-select{
   font-weight: 600;
   font-size: 18px;
   margin-right: 10px;
+}
+
+.school-uniform-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+}
+
+.uniform-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.uniform-container img{
+  width: 100%;
+}
+
+.right-gus{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
 }
 
 /* uniform section css end */

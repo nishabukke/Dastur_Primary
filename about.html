@@ -41,7 +41,7 @@
           <div class="container-fluid">
             <a href="index.html" class="logo">
               <img src="images/logo.png" alt="logo img">
-              <h1 class="school-name">Bai Najamai Noshirwan <br> Dastur Primary & Nursery School</h1>
+              <h1 class="school-name">Bai Najamai Noshirwan Dastur <br> Primary & Nursery School</h1>
             </a>
             <div class="navigation">
               <ul class="nav navbar-nav">
@@ -54,15 +54,21 @@
                         </ul>
                       </div>
                   </li>
-                  <li class="nav-li"><a href="#">Rules  </a>
+                  <li class="nav-li"><a href="#">Rules</a>
                     <div class="dropdown">
-                        <ul>
-                          <li><a href="#">Rules for School</a></li>
-                          <li><a href="uniform.html">School Uniform</a></li>
-                          <li><a href="#">Admission & Withdrawal</a></li>
-                          <li><a href="#">Reccomendation to Parents</a></li>
-                        </ul>
-                      </div>
+                      <ul>
+                        <li><a href="#">General Rules</a></li>
+                        <li>
+                          <a href="#">School Uniform ▸</a>
+                          <ul class="submenu">
+                            <li><a href="primary-uniform.html">Primary Uniform</a></li>
+                            <li><a href="pre-primary-uniform.html">Pre-Primary Uniform</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Admission & Withdrawal</a></li>
+                        <li><a href="#">Recommendation to Parents</a></li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="nav-li"><a href="#">Infrastructure & Facilities  </a>
                     <div class="dropdown">
@@ -87,17 +93,6 @@
           </div>
         </div>  
       </div>
-      <!-- <div class="enroll-div">
-        <div class="container">
-          <div class="left-enroll">
-            <h4 class="m-0">ENROLL A CHILD</h4>
-            <p class="m-0">We provide the perfect education for your child every day</p>
-          </div>
-          <div class="right-enroll">
-            <a href="#" class="payment-btn"> <svg class="wgl-dashes inner-dashed-border animated-dashes"> <rect rx="25px" ry="25px">  </rect> </svg> Contact Us</a>
-          </div>
-        </div>
-      </div> -->
     </header>
 
     <main class="site-content">
@@ -117,8 +112,8 @@
             <div class="container">
                 <div class="left-about">
                 <div class="d-flex justify-content-around text-center flex-column"> 
-                    <div class="TabButton disabled">Navigation</div>
-                    <div class="TabButton TabButtonSelected" id="Tab1" onclick="activeTab(event, 'Tab1')">About The School</div>
+                    <!-- <div class="TabButton disabled">Navigation</div> -->
+                    <div class="TabButton TabButtonSelected" id="Tab1" onclick="activeTab(event, 'Tab1')">School History</div>
                     <div class="TabButton " id="Tab2" onclick="activeTab(event, 'Tab2')">Our Motto</div>
                     <div class="TabButton " id="Tab3" onclick="activeTab(event, 'Tab3')">School Song</div>
                     <div class="TabButton " id="Tab4" onclick="activeTab(event, 'Tab4')">School Hours</div>
@@ -131,6 +126,7 @@
                     <div id="SectionTab1" class="tab-section d-chart-n d-chart-show" >
                         <img src="images/school-history.jpg" alt="">
                         <h2 class="main-heading">School History</h2>
+                        <br>
                             <p>The foundation of Primary Education by Sardar Dastur Schools Trust goes back to the establishment of Primary Wing in Sardar Dastur Noshirwan Girls High School which was established in 1893. Later, to commemorate the Golden Jubilee of the Girls' School, a Nursery Department was started in 1953.</p>
                             <br>
                             <p>Till the establishment of Sardar Dastur Hoshang Boys' High School in 1912, the Primary Wing was also open to Parsee boys up to 9 years. During the period March to June 1953, a Primary and Preparatory School for boys was started in Sardar Dastur Hoshang Boys High School.</p>
@@ -141,59 +137,66 @@
                         <img src="images/vision-img.jpg" alt="">
                         <div class="common-heading">
                             <h2 class="main-heading">Our Motto</h2>
+                            <br>
                         </div>
-                        <p>The guiding principle of our school is embodied in the words <strong>“Humata”</strong>, <strong>“Hukata”</strong>, <strong>“Huvarashta”</strong> (Good Thoughts, Good Words and Good Deeds).</p>
+                        <div class="motto-div">
+                          <img src="images/dastur-logo.png" alt="" style="width: 150px;">
+                          <p>The guiding principle of our school is embodied in the words <strong>“Humata”</strong>, <strong>“Hukata”</strong>, <strong>“Huvarashta”</strong> (Good Thoughts, Good Words and Good Deeds).</p>
+                        </div>
                     </div>
                     <div id="SectionTab3" class="tab-section d-chart-n">
-                        <p class="text-center"><b>WE ARE DASTURIANS</b></p>
-                        <p class="text-center">
-                            We are Dasturians, so bold and brave, 
-                            We're happy children, honest and true, 
-                            Love and gratitude, we offer you, 
+                        <p><b>WE ARE DASTURIANS</b></p>
+                        <br>
+                        <p>
+                            We are Dasturians, so bold and brave, <br>
+                            We're happy children, honest and true, <br>
+                            Love and gratitude, we offer you, <br>
                             Dear Alma Mater, we're proud of you.
                         </p>
                         <br>
-                        <p class="text-center">
-                            Our life's first lessons, we learnt them here, 
-                            Respect our elders, to be sincere, 
-                            Obey our parents and teachers dear, 
+                        <p>
+                            Our life's first lessons, we learnt them here, <br>
+                            Respect our elders, to be sincere, <br>
+                            Obey our parents and teachers dear, <br>
                             We learn all this in our Life's Best Years. 
                         </p>
                         <br>
-                        <p class="text-center">
-                            Good thoughts, Good words, Good deeds, 
-                            is our motto to succeed, 
-                            Good thoughts, Good words, Good deeds, 
+                        <p>
+                            Good thoughts, Good words, Good deeds, <br>
+                            is our motto to succeed, <br>
+                            Good thoughts, Good words, Good deeds, <br>
                             is our prayer, God give us the lead. 
                         </p>
                         <br>
-                        <p class="text-center">
-                            We're simple, noble Dasturians, 
-                            We try to do the right, 
-                            God is always on our side, 
+                        <p>
+                            We're simple, noble Dasturians, <br>
+                            We try to do the right, <br>
+                            God is always on our side, <br>
                             We keep walking in His Light.
                         </p>
+                        <br>
+                        <blockquote><em><strong>Miss S. S. Doctor</strong></em></blockquote>
                     </div>
                     <div id="SectionTab4" class="tab-section d-chart-n">
                         <div class="school-hours-inner">
                           <div class="sh-item">
-                            <h4><strong> &#9734 Std I&II &#9734 </strong></h4>
-                            <p>Session I : 9.00AM to 3.00PM (SAT Closed)</p>
-                            <p>Session II : 12.30AM to 5.30PM</p>
-                            <p>Session II : 12.30AM to 2.45PM (2nd & 4th Saturday)</p>
+                            <h4><strong>  Std I & II  </strong></h4>
+                            <p><strong>Session I</strong> : 9.00AM to 3.00PM (SAT Closed)</p>
+                            <p><strong>Session II</strong> : 12.30AM to 5.30PM</p>
+                            <p><strong>Session II</strong> : 12.30AM to 2.45PM (2nd & 4th Saturday)</p>
                           </div>
                           <div class="sh-item">
-                            <h4><strong> &#9734 Std III&IV &#9734 </strong></h4>
-                            <p>Session I : 9.00AM to 3.00PM (SAT Closed)</p>
+                            <h4><strong>  Std III & IV  </strong></h4>
+                            <p><strong>Session I</strong> : 9.00AM to 3.00PM (SAT Closed)</p>
                           </div>
                           <div class="sh-item">
-                            <h4><strong> &#9734 Nursery & Jr.Kg &#9734 </strong></h4>
-                            <p>Session I : 9.00AM to 12.30PM (SAT Closed)</p>
-                            <p>Session II : 12.30AM to 4.00PM (SAT Closed)</p>
+                            <h4><strong>  Nursery & Jr.Kg  </strong></h4>
+                            <p><strong>Session I</strong> : 9.00AM to 12.30PM (SAT Closed)</p>
+                            <p><strong>Session II</strong> : 12.30AM to 4.00PM (SAT Closed)</p>
                           </div>
                           <div class="sh-item">
-                            <h4><strong> &#9734 Sr.Kg &#9734 </strong> </h4>
-                            <p>Session I : 9.00AM to 12.30PM (SAT Closed)</p>
+                            <h4><strong>  Sr.Kg  </strong> </h4>
+                            <p><strong>Session I</strong> : 9.00AM to 12.30PM (SAT Closed)</p>
                           </div>
                         </div>
                     </div>
@@ -202,7 +205,14 @@
                         <div class="common-heading">
                             <h2 class="main-heading"> Our Houses</h2>
                         </div>
-                        <p>To inculcate competitive spirit and espirit de corps, the girls are grouped into 4 houses – <b>Tata (Green House)</b>, <b>Bhabha (Violet House)</b>, <b>Dastur (Yellow House)</b>  and <b>Wadia (Red House)</b>.</p>
+                        <p>To inculcate competitive spirit and espirit de corps, the girls are grouped into 4 houses – 
+                        </p>
+                        <ul style="padding-left: 40px;">
+                          <li  style="list-style-type: disc;"><b>Tata (Green House)</b></li>
+                          <li style="list-style-type: disc;"><b>Bhabha (Violet House)</b></li>
+                          <li style="list-style-type: disc;"><b>Dastur (Yellow House)</b></li>
+                          <li style="list-style-type: disc;"><b>Wadia (Red House)</b></li>
+                        </ul>
                     </div>
                     <div id="SectionTab6" class="tab-section d-chart-n">
                        <div class="team-inner">
@@ -215,7 +225,7 @@
                           <div class="team-item">
                             <img src="images/pre-primary-staff.JPG" alt="">
                             <div class="team-desc">
-                                <h5><strong> &#9734 Pre Primary Staff &#9734 </strong></h5>
+                                <h5><strong> &#9734 Pre-Primary Staff &#9734 </strong></h5>
                             </div>
                           </div>
                           <div class="team-item">
@@ -277,11 +287,11 @@
                     <h5>School Timings</h5>
                     <hr>
                     <ul>
-                        <li><strong> &#9734 Std I&II &#9734 </strong> <p>Session I : 9.00AM to 3.00PM (SAT Closed)</p>
+                        <li><strong> &#9734 Std I & II &#9734 </strong> <p>Session I : 9.00AM to 3.00PM (SAT Closed)</p>
                             <p>Session II : 12.30AM to 5.30PM</p>
                             <p>Session II : 12.30AM to 2.45PM (2nd & 4th Saturday)</p>
                         </li>
-                        <li><strong> &#9734 Std III&IV &#9734 </strong> <p>Session I : 9.00AM to 3.00PM (SAT Closed)</p>
+                        <li><strong> &#9734 Std III & IV &#9734 </strong> <p>Session I : 9.00AM to 3.00PM (SAT Closed)</p>
                         </li>
                         <li><strong> &#9734 Nursery & Jr.Kg &#9734 </strong> <p>Session I : 9.00AM to 12.30PM (SAT Closed)</p>
                             <p>Session II : 12.30AM to 4.00PM (SAT Closed)</p>
