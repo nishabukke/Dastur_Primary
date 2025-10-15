@@ -47,7 +47,6 @@ $(window).on("scroll touchmove", function() {
   $('.sticky-area').removeAttr('style');
   $('.sticky-area ul.nav .nav-li > a').removeAttr('style');
   $('.school-name').removeAttr('style');
-
   }
   
 });
